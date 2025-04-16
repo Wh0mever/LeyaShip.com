@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leya Ship Management - Professional Crew Management Agency</title>
+    <meta name="description" content="Professional crew management agency for seafarers">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Leya Ship Management">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="about.html" class="nav-link">Leya Shipping</a></li>
+                    <li class="nav-item"><a href="shipowners.html" class="nav-link">Our Mission</a></li>
+                    <li class="nav-item"><a href="seafarers.html" class="nav-link">For Shipowners</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">For Seamen</a></li>
+                    <li class="nav-item"><a href="inspiration.html" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="application-form.html" class="nav-link">Application Form</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="carousel-image" style="background-image: url('./images/carusel/pexels-dibert-1117210.jpg');">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="carousel-content">
+                                <h1>Professional Crew Management</h1>
+                                <p>Connecting qualified seafarers with reputable vessel owners worldwide</p>
+                                <a href="about.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image" style="background-image: url('./images/carusel/pexels-einfoto-2326876.jpg');">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="carousel-content">
+                                <h1>For Shipowners</h1>
+                                <p>Comprehensive crew management solutions tailored to your specific needs</p>
+                                <a href="shipowners.html" class="btn btn-primary">Our Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image" style="background-image: url('./images/carusel/pexels-matthew-barra-178916-813011.jpg');">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="carousel-content">
+                                <h1>For Seafarers</h1>
+                                <p>Exciting career opportunities in the maritime industry</p>
+                                <a href="seafarers.html" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Leya Ship Management</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>Professional Service</h3>
+                        <p>We provide comprehensive crew management services with a focus on quality and professionalism.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Experienced Team</h3>
+                        <p>Our team has extensive experience in the maritime industry and crew management.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-anchor"></i>
+                        </div>
+                        <h3>Global Network</h3>
+                        <p>We have established a global network of qualified seafarers and reputable vessel owners.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="services-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <h3>For Shipowners</h3>
+                        <p>We provide comprehensive crew management solutions tailored to meet the specific needs of vessel owners and operators.</p>
+                        <ul class="service-list">
+                            <li>Crew Selection and Recruitment</li>
+                            <li>Crew Documentation Management</li>
+                            <li>Crew Rotation Planning</li>
+                            <li>24/7 Support for Vessel Operators</li>
+                        </ul>
+                        <a href="shipowners.html" class="btn btn-outline btn-sm">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>For Seafarers</h3>
+                        <p>We connect qualified seafarers with reputable vessel owners worldwide, offering exciting career opportunities in the maritime industry.</p>
+                        <ul class="service-list">
+                            <li>Job Placement on Various Vessel Types</li>
+                            <li>Career Development Opportunities</li>
+                            <li>Documentation Support</li>
+                            <li>Competitive Employment Terms</li>
+                        </ul>
+                        <a href="seafarers.html" class="btn btn-outline btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Work With Us?</h2>
+                <p>Whether you're a vessel owner looking for qualified crew or a seafarer seeking new opportunities, we're here to help you navigate the maritime industry.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    <a href="application-form.html" class="btn btn-outline-light">Download Application Form</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.svg" alt="Leya Ship Management" class="logo-white">
+                    </a>
+                    <p>Professional crew management agency connecting qualified seafarers with reputable vessel owners worldwide.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shipowners.html">For Shipowners</a></li>
+                        <li><a href="seafarers.html">For Seafarers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="inspiration.html">Our Inspiration</a></li>
+                        <li><a href="application-form.html">Application Form</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>17 Murata Akhedzhaka Street, Novorossiysk, Krasnodar Region, Russia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>CEO - Prokopenko Nikita</p>
+                                <p>+7 964 894‑94‑97
+                                    <a href="https://t.me/ProkopenkoNikita" target="_blank" class="social-link">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="https://wa.me/79648949497" target="_blank" class="social-link">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>Financial Director - Prokopenko Kristina</p>
+                                <p>+7 988 669-83-30
+                                    <a href="https://t.me/ProkopenkoKristina" target="_blank" class="social-link">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="https://wa.me/79886698330" target="_blank" class="social-link">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@leyashipmanagement.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Working Hours</h3>
+                    <ul>
+                        <li><span>Monday - Friday:</span> <span>9:00 AM - 6:00 PM</span></li>
+                        <li><span>Saturday:</span> <span>10:00 AM - 2:00 PM</span></li>
+                        <li><span>Sunday:</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Leya Ship Management. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
