@@ -62,16 +62,15 @@ img {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container1 {
   width: 100%;
   max-width: 1200px;
-  margin: 0;
-  padding: 0;
-
+  /* margin: 0 auto; */
+  /* padding: 0; */
 }
 
 .text-center {
@@ -154,12 +153,12 @@ img {
 
 .navbar {
   position: absolute;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem 0;
-  background-color: #ffffffbb;
-  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(2, 2, 2, 0.609);
 }
 
 .logo {
@@ -184,7 +183,7 @@ img {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: var(--border-radius);
 }
@@ -253,11 +252,11 @@ img {
 }
 
 .carousel-content {
-  position: absolute;
-  max-width: 800px;
-  padding: 0 10rem;
+  position: relative;
+  max-width: 600px;
+  padding: 10rem 2rem;
   color: var(--white);
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .carousel-content h1 {
@@ -324,7 +323,7 @@ img {
 
 /* Sections */
 .section {
-  padding: 4rem 8rem;
+  padding: 4rem 0;
 }
 
 .bg-light {
@@ -358,7 +357,6 @@ img {
 }
 
 /* About Section */
-
 .about-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -471,7 +469,7 @@ img {
 .cta-section {
   background-color: var(--primary-color);
   color: var(--white);
-  /* padding: 4rem 0; */
+  padding: 4rem 0;
   text-align: center;
 }
 
@@ -1230,22 +1228,4 @@ img {
   .process-steps {
     grid-template-columns: 1fr;
   }
-}
-
-
-
-
-/* ################### */
-
-/* Animation base state */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-}
-
-/* When in view */
-.animate-on-scroll.in-view {
-    opacity: 1;
-    transform: translateY(0);
 }
