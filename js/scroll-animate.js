@@ -1,17 +1,12 @@
-// scroll-animate.js
+    const navbar = document.querySelector(".navbar");
+    const logoImg = document.getElementById("logo-img");
 
-document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.animate-on-scroll');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-            }
-        });
-    }, {
-        threshold: 0.1
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add("sticky");
+            logoImg.src = "../images/Untitled.svg"; // your scrolled logo
+        } else {
+            navbar.classList.remove("sticky");
+            logoImg.src = "../images/logo.svg"; // your default logo
+        }
     });
-
-    elements.forEach(el => observer.observe(el));
-});
