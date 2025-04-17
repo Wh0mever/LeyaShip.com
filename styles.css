@@ -520,14 +520,14 @@ video {
 }
 
 .bg-light {
-  background: url(/images/carusel/about.jpg);
+  background: url(./images/carusel/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 .bg-light2 {
-  background: url(/images/carusel/contact.jpg);
+  background: url(./images/carusel/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
