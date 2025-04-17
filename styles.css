@@ -520,14 +520,14 @@ video {
 }
 
 .bg-light {
-  background-image: url(./images/carusel/about.jpg);
+  background: url(/images/carusel/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 .bg-light2 {
-  background-image: url(./images/carusel/contact.jpg);
+  background: url(/images/carusel/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -791,6 +791,7 @@ video {
 }
 
 .footer-hours ul li {
+  width: 300px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;

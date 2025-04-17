@@ -1,5 +1,5 @@
 const counts = document.querySelectorAll('.count')
-const speed = 24;
+const speed = 13;
 
 counts.forEach((counter) => {
     function upDate(){
@@ -8,7 +8,7 @@ counts.forEach((counter) => {
         const inc = target / speed        
         if(count < target){
             counter.innerText = Math.floor(inc + count) 
-            setTimeout(upDate, 30)
+            setTimeout(upDate, 50)
         }else{
             counter.innerText = target
         }
