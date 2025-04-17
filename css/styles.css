@@ -283,6 +283,96 @@ img {
   align-items: center;
   justify-content: center;
 }
+.container-v .back-img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+/* ############## */
+/* About main */
+
+.counter-wrapper{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5rem;
+  padding: 5rem 5%;
+  /* margin-top: 5rem; */
+  position: relative;
+}
+.counter-wrapper::before{
+  position: absolute;
+  content: '';
+  content: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #000000ca; */
+  z-index: 1;
+}
+.counter{
+ text-align: center;   
+ color: var(--primary-light);
+ z-index: 2;
+ position: relative;
+}
+.counter::before{
+  position: absolute;
+  content: '';
+  bottom: -2rem;
+  left: 50%;
+  width: 20%;
+  height: .2rem;
+  background: var(--primary-light);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.counter .count{
+  font-size: 5rem;
+  margin-bottom: 1rem;    
+}
+.counter p{
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  html{
+      font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+ .counter-wrapper{
+     grid-template-columns: repeat(2, 1fr);
+     grid-row-gap: 8rem;
+ }
+}
+@media (max-width: 450px) {
+  html{
+      font-size: 50%;
+  }
+  .counter-wrapper{
+      grid-template-columns: 1fr;
+  }
+}
+/* ############## */
 
 .content{
   text-align: center;
@@ -618,6 +708,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.footer-logo img {
+  height: 100px;
+  width: auto;
+}
+
 .logo-white {
   filter: brightness(0) invert(1);
   height: 40px;
@@ -643,6 +738,8 @@ video {
   color: var(--white);
 }
 
+
+
 .footer-contact ul li {
   display: flex;
   align-items: flex-start;
@@ -653,6 +750,10 @@ video {
   color: var(--primary-color);
   margin-right: 1rem;
   margin-top: 5px;
+}
+
+.footer-contact .mail {
+  color: var(--primary-light);
 }
 
 .footer-hours ul li {
@@ -666,6 +767,8 @@ video {
   padding: 1.5rem 0;
   text-align: center;
 }
+
+
 
 /* Add this to the footer styles section */
 
