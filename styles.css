@@ -1422,6 +1422,23 @@ video {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 2rem 0;
   }
+  .navbar {
+    display: block;
+    width: 100%;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
 
   .nav-menu.active {
     left: 0;
