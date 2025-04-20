@@ -238,6 +238,7 @@ img {
 .hamburger {
   display: none;
   cursor: pointer;
+  margin: 40px 0 0 40px;
 }
 
 .bar {
@@ -246,7 +247,7 @@ img {
   height: 3px;
   margin: 5px auto;
   transition: var(--transition);
-  background-color: var(--text-color);
+  background-color: var(--primary-light);
 }
 
 /* Hero Carousel */
@@ -1410,35 +1411,54 @@ video {
 }
 
 @media (max-width: 768px) {
+
+  
+  .navbar.sticky li a{
+    color: var(--primary-light);
+  }
+
+  .navbar.hamburger {
+    color: var(--primary-color);
+  }
+
+  .navbar.sticky{
+    color: var(--primary-color);
+  }
+
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu.active {
+    left: 0; /* Меню будет выезжать в сторону */
+    background-color: var(--primary-color);
+  }
+  
+  .hamburger.active {
+    display: block;
+    background-color: var(--primary-color);
+  }
+  
+  .hamburger .bar {
+    background-color: var(--primary-light);
+  }
+  
+
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--primary-color);
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 2rem 0;
+    height: 200px;
   }
-  .navbar {
-    display: block;
-    width: 100%;
-  }
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-  }
-  .nav-menu.active {
-    display: flex;
-  }
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-  }
-
 
   .nav-menu.active {
     left: 0;
@@ -1454,6 +1474,7 @@ video {
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+    background-color: var(--primary-light);
   }
 
   .hamburger.active .bar:nth-child(1) {
