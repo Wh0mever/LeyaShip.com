@@ -4,40 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Shipowners - Leya Ship Management</title>
-    <meta name="description" content="Comprehensive crew management solutions for vessel owners and operators">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo3.svg">
+    <meta name="description" content="Professional crew management agency for seafarers">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="Leya Ship Management">
-                </a>
-                
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="shipowners.html" class="nav-link active">For Shipowners</a></li>
-                    <li class="nav-item"><a href="seafarers.html" class="nav-link">For Seafarers</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="inspiration.html" class="nav-link">Our Inspiration</a></li>
-                    <li class="nav-item"><a href="application-form.html" class="nav-link">Application Form</a></li>
-                </ul>
-                
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+    <header class="navbar" id="navbar">
+        <nav class="nav-content">
+          <ul class="nav-left desktop-nav">
+            <li><a href="./index.html">LSM</a></li>
+            <li><a href="./inspiration.html">About Us</a></li>
+            <li><a href="./shipowners.html">For Shipowners</a></li>
+          </ul>
+    
+          <div class="nav-logo">
+            <img id="nav-logo-img" src="./images/logo.svg" alt="Logo"/>
+          </div>
+    
+          <ul class="nav-right desktop-nav">
+            <li><a href="./seafarers.html">For Seaman</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="./application-form.html">Application Form</a></li>
+          </ul>
+    
+
+          <div class="nav-logo-2">
+            <img id="nav-logo-img" src="./images/logo2.svg" alt="Logo"/>
+          </div>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+    
+        <div class="mobile-menu" id="mobileMenu">
+          <ul>
+            <li><a href="./index.html">LSM</a></li>
+            <li><a href="./inspiration.html">About Us</a></li>
+            <li><a href="./shipowners.html">For Shipowners</a></li>
+            <li><a href="./seafarers.html">For Seaman</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="./application-form.html">Application Form</a></li>
+          </ul>
         </div>
-    </header>
+      </header>
 
     <main>
+        <section>
+            <div class="container-v">
+
+                <img src="./images/carusel/apgl-largest-ship1.jpg" alt="img-background" class="back-img">
+        
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>Reliable Solutions for Shipowners</h1>
+                        <p>                            We provide shipowners with thoroughly vetted maritime professionals, ensuring optimal crew performance, compliance with international standards, and operational efficiency.</p>
+                        <a href="./contact.html" class="btn btn-primary">Contact Our Team</a>
+                    </div>
+                </div>
+               
+</section>
         <section class="page-section">
             <div class="container">
                 <div class="section-header">
@@ -110,7 +143,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <a href="index.html" class="footer-logo">
-                        <img src="images/logo.svg" alt="Leya Ship Management" class="logo-white">
+                        <img src="./images/logo.svg" alt="Leya Ship Management" class="logo-white">
                     </a>
                     <p>Professional crew management agency connecting qualified seafarers with reputable vessel owners worldwide.</p>
                 </div>
@@ -118,12 +151,12 @@
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="shipowners.html">For Shipowners</a></li>
-                        <li><a href="seafarers.html">For Seafarers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="inspiration.html">Our Inspiration</a></li>
-                        <li><a href="application-form.html">Application Form</a></li>
+                        <li><a href="./index.html">LSM</a></li>
+                        <li><a href="./inspiration.html">About Us</a></li>
+                        <li><a href="./shipowners.html">For Shipowners</a></li>
+                        <li><a href="./seafarers.html">For Seaman</a></li>
+                        <li><a href="./contact.html">Contacts</a></li>
+                        <li><a href="./application-form.html">Application Form</a></li>
                     </ul>
                 </div>
                 
@@ -138,19 +171,30 @@
                             <i class="fas fa-phone"></i>
                             <div>
                                 <p>CEO - Prokopenko Nikita</p>
-                                <p>+7 964 894‑94‑97</p>
+                                <p>+7 964 894‑94‑97
+                                    
+                                    <a href="https://wa.me/79648949497" target="_blank" class="social-link">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </p>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <div>
                                 <p>Financial Director - Prokopenko Kristina</p>
-                                <p>+7 988 669-83-30</p>
+                                <p>+7 988 669-83-30
+                                  
+                                    <a href="https://wa.me/79886698330" target="_blank" class="social-link">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </p>
                             </div>
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>info@leyashipmanagement.com</span>
+                            <a href="mailto:crew@leyashipping.com" class="mail"><i class="fas fa-envelope"></i>
+                                <span>crew@leyashipping.com</span></a>
+                            
                         </li>
                     </ul>
                 </div>
@@ -171,6 +215,9 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script>
+    <script src="./js/scroll-animate.js"></script> -->
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
